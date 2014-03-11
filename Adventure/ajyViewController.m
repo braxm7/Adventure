@@ -12,11 +12,23 @@
 @interface ajyViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *clearUpBoxesButton;
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxesButton;
-
+@property (weak, nonatomic) IBOutlet UITextField *protaganistName;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
 @implementation ajyViewController
+
+-(void)viewDidLoad{
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSString *user = self.protaganistName.text;
+    [self changeProtaganist: user];
+
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton*)sender
 {
@@ -28,16 +40,38 @@
 
     
 }
+- (IBAction)onUserChanged:(id)sender {
+    NSString *user = self.protaganistName.text;
+    [self changeProtaganist: user];
+    //[self.view endEditing:YES];
+    //[self.protaganistName resignFirstResponder];
+    
+}
 
-- (IBAction) unwindFromDestinationViewController:(UIStoryboardSegue*)sender
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.protaganistName resignFirstResponder];
+}
+
+- (IBAction)unwindFromDestinationViewController:(UIStoryboardSegue*)sender
 {
     AdventureViewController *vc = sender.sourceViewController;
-    
-    //NSLog(@"%@", vc.title);
-    
+
     self.storyEndingLabel.text = vc.title;
+
+}
+
+- (void) changeProtaganist: (NSString*) name
+{
+    //get the text from the text view
+    //NSString *text = self.textView.text;
     
-     //NSLog(@"%@",self.storyEndingLabel.text );
+    NSString *myString = @" wakes up in the Mobile Maker space surrounded by empty pizza boxes.";
+    
+    NSString *resultString = [name stringByAppendingString:myString];
+    
+    self.textView.text = resultString;
+    
 
 }
 
