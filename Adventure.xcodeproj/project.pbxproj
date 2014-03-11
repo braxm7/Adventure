@@ -22,6 +22,7 @@
 		41373C7018CF921C00711534 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41373C6E18CF921C00711534 /* InfoPlist.strings */; };
 		41373C7218CF921C00711534 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41373C7118CF921C00711534 /* AdventureTests.m */; };
 		41373C7C18CF96AA00711534 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41373C7B18CF96AA00711534 /* CheckMate.framework */; };
+		41373C7F18CFA0ED00711534 /* AdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41373C7E18CFA0ED00711534 /* AdventureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		41373C6F18CF921C00711534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41373C7118CF921C00711534 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
 		41373C7B18CF96AA00711534 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../CheckMate.framework; sourceTree = "<group>"; };
+		41373C7D18CFA0ED00711534 /* AdventureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventureViewController.h; sourceTree = "<group>"; };
+		41373C7E18CFA0ED00711534 /* AdventureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdventureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				41373C5518CF921C00711534 /* ajyAppDelegate.h */,
 				41373C5618CF921C00711534 /* ajyAppDelegate.m */,
 				41373C5818CF921C00711534 /* Main.storyboard */,
+				41373C7D18CFA0ED00711534 /* AdventureViewController.h */,
+				41373C7E18CFA0ED00711534 /* AdventureViewController.m */,
 				41373C5B18CF921C00711534 /* ajyViewController.h */,
 				41373C5C18CF921C00711534 /* ajyViewController.m */,
 				41373C5E18CF921C00711534 /* Images.xcassets */,
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41373C5318CF921C00711534 /* main.m in Sources */,
+				41373C7F18CFA0ED00711534 /* AdventureViewController.m in Sources */,
 				41373C5718CF921C00711534 /* ajyAppDelegate.m in Sources */,
 				41373C5D18CF921C00711534 /* ajyViewController.m in Sources */,
 			);

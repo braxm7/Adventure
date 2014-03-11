@@ -7,6 +7,7 @@
 //
 
 #import "ajyViewController.h"
+#import "AdventureViewController.h"
 
 @interface ajyViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *clearUpBoxesButton;
@@ -25,6 +26,10 @@
     vc.title = sender.currentTitle;;
 
     
+}
+
+- (IBAction) unwindFromDestinationViewController:(UIStoryboardSegue*)sender
+{
 }
 
 @end
