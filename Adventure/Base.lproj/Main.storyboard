@@ -16,15 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-ll-Alw">
-                                <rect key="frame" x="76" y="216" width="179" height="136"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-0J-jPz">
+                                <rect key="frame" x="20" y="347" width="280" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-ll-Alw">
+                                <rect key="frame" x="-4" y="424" width="326" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQE-l3-2Wn">
-                                <rect key="frame" x="102" y="360" width="104" height="30"/>
+                                <rect key="frame" x="20" y="502" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear up boxes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke9-vP-gaH">
-                                <rect key="frame" x="120" y="431" width="69" height="30"/>
+                                <rect key="frame" x="231" y="502" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Eat boxes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,12 +49,17 @@
                                     <segue destination="95U-1i-zlb" kind="push" id="fSq-U0-XmK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mobilemakers" translatesAutoresizingMaskIntoConstraints="NO" id="aOu-UX-ubL">
+                                <rect key="frame" x="0.0" y="64" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="pXL-VQ-d6b"/>
                     <connections>
                         <outlet property="eatBoxesButton" destination="Ke9-vP-gaH" id="mym-gE-kIt"/>
+                        <outlet property="storyEndingLabel" destination="Vcq-0J-jPz" id="etg-YT-pUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -68,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoM-vh-XRq">
-                                <rect key="frame" x="98" y="352" width="124" height="30"/>
+                                <rect key="frame" x="98" y="405" width="124" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Did Ryan survive?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,6 +88,10 @@
                                     <segue destination="dkx-ny-QY2" kind="push" id="QnV-G8-OFe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="feeling sick" translatesAutoresizingMaskIntoConstraints="NO" id="QpW-oJ-Ncv">
+                                <rect key="frame" x="0.0" y="64" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -86,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1065" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - 3 days in Chicago Hospital-->
         <scene sceneID="uMw-dC-Jow">
             <objects>
-                <viewController id="dkx-ny-QY2" sceneMemberID="viewController">
+                <viewController title="3 days in Chicago Hospital" id="dkx-ny-QY2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hWz-vY-3cx"/>
                         <viewControllerLayoutGuide type="bottom" id="4fq-5U-zdH"/>
@@ -98,27 +113,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." translatesAutoresizingMaskIntoConstraints="NO" id="A9K-8c-T4J">
-                                <rect key="frame" x="0.0" y="218" width="320" height="132"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-8c-T4J">
+                                <rect key="frame" x="-1" y="293" width="320" height="117"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uve-qP-z12">
-                                <rect key="frame" x="147" y="431" width="46" height="30"/>
+                                <rect key="frame" x="137" y="473" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="THE END.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="2lM-5V-ClK" kind="unwind" unwindAction="unwindFromDestinationViewController:" id="h0Z-F5-Odh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hospital" translatesAutoresizingMaskIntoConstraints="NO" id="dtE-1Z-4Pu">
+                                <rect key="frame" x="0.0" y="65" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jtp-XQ-njF"/>
+                    <navigationItem key="navigationItem" title="3 days in Chicago Hospital" id="jtp-XQ-njF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPM-kh-L9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2lM-5V-ClK" userLabel="Exit" sceneMemberID="exit"/>
@@ -165,6 +184,10 @@
                                     <segue destination="tqI-hc-6kM" kind="push" id="kIs-K7-jMt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark" translatesAutoresizingMaskIntoConstraints="NO" id="946-hv-5DJ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -174,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="1058" y="-496"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Happily Ever After-->
         <scene sceneID="ekI-My-6nU">
             <objects>
-                <viewController id="tqI-hc-6kM" sceneMemberID="viewController">
+                <viewController title="Happily Ever After" id="tqI-hc-6kM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HGr-Vs-JdA"/>
                         <viewControllerLayoutGuide type="bottom" id="Pzp-Tw-ckD"/>
@@ -194,19 +217,23 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqW-yr-n4n">
-                                <rect key="frame" x="162" y="430" width="46" height="30"/>
+                                <rect key="frame" x="104" y="431" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Love is in the air">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="aJe-Sa-Nim" kind="unwind" unwindAction="unwindFromDestinationViewController:" id="hcf-l8-P0M"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wedding image" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-c4-38I">
+                                <rect key="frame" x="-1" y="63" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pTC-49-mCe"/>
+                    <navigationItem key="navigationItem" title="Happily Ever After" id="pTC-49-mCe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0C9-Yz-9v8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aJe-Sa-Nim" userLabel="Exit" sceneMemberID="exit"/>
@@ -214,6 +241,13 @@
             <point key="canvasLocation" x="1498" y="-495"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="feeling sick" width="182" height="187"/>
+        <image name="hospital" width="835" height="485"/>
+        <image name="mobilemakers" width="476" height="297"/>
+        <image name="questionmark" width="466" height="580"/>
+        <image name="wedding image" width="687" height="605"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

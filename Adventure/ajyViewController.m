@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearUpBoxesButton;
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxesButton;
 
+
 @end
 
 @implementation ajyViewController
@@ -30,6 +31,17 @@
 
 - (IBAction) unwindFromDestinationViewController:(UIStoryboardSegue*)sender
 {
+    AdventureViewController *vc = sender.sourceViewController;
+    
+    //NSLog(@"%@", vc.title);
+    
+    self.storyEndingLabel.text = vc.title;
+    
+     //NSLog(@"%@",self.storyEndingLabel.text );
+
 }
+
+
+
 
 @end

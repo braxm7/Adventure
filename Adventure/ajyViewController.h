@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ajyViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *storyEndingLabel;
 @end
